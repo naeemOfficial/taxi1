@@ -11,18 +11,17 @@ const Gallery = () => {
     <div className="flex flex-col items-center py-9">
       <div className="flex flex-col items-center mt-8">
         <h2 className="text-xl font-bold text-[#125685] mb-4">GALLERY</h2>
-
-        <h2 className="text-3xl font-extrabold  text-[#1C1C1C] mb-4">
+        <h2 className="text-3xl font-extrabold text-[#1C1C1C] mb-4">
           Some of Our Memories
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-8">
-        <img src={img1} alt="Image 1" className="w-80 h-48 object-cover" />
-        <img src={img2} alt="Image 2" className="w-80 h-48 object-cover" />
-        <img src={img3} alt="Image 3" className="w-80 h-48 object-cover" />
-        <img src={img4} alt="Image 4" className="w-80 h-48 object-cover" />
-        <img src={img5} alt="Image 5" className="w-80 h-48 object-cover" />
-        <img src={img6} alt="Image 6" className="w-80 h-48 object-cover" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-8">
+        <img src={img1} alt="Image 1" className="w-full h-48 object-cover" />
+        <img src={img2} alt="Image 2" className="w-full h-48 object-cover" />
+        <img src={img3} alt="Image 3" className="w-full h-48 object-cover" />
+        <img src={img4} alt="Image 4" className="w-full h-48 object-cover" />
+        <img src={img5} alt="Image 5" className="w-full h-48 object-cover" />
+        <img src={img6} alt="Image 6" className="w-full h-48 object-cover" />
       </div>
       <a
         href="#"

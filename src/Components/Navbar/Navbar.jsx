@@ -4,10 +4,10 @@ const Navbar = () => {
   return (
     <nav className="bg-[#125685]">
       <div className="max-w-7xl mx-auto py-5 px-2 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-16">
+        <div className="relative flex flex-wrap items-center justify-between md:flex-nowrap">
           {/* Logo */}
           <img
-            className="h-[82px] w-[82px]"
+            className="h-[82px] w-[82px] md:h-[64px] md:w-[64px] mr-4 md:mr-0 mb-4 md:mb-0"
             src="/src/assets/images/logo.png"
             alt="Logo"
           />
@@ -32,7 +32,7 @@ const Navbar = () => {
 
           {/* Right Texts */}
           <div className="items-center text-center">
-            <h6 className="text-xl font-semibold text-[#FFC327]">
+            <h6 className="text-xl font-semibold text-[#FFC327] hidden md:block">
               Call Us at:
             </h6>
             <h2 className="underline underline-offset-6 text-2xl font-semibold text-[#FFFFFF]">

@@ -11,36 +11,34 @@ import img from "../../assets/images/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-[#125685] text-white">
-      <div className="max-w-7xl mx-auto py-8 px-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div>
-            <img src={img} alt="Logo" className="w-16" />
-          </div>
+      <div className="max-w-7xl mx-auto py-8 px-4 flex flex-col md:flex-row items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center mb-4 md:mb-0">
+          <img src={img} alt="Logo" className="w-16" />
+        </div>
 
-          {/* Social Icons */}
-          <div className="flex space-x-4">
-            <h6 className="font-bold text-xl">SOCIAL LINKS</h6>
-            <a href="#" className="hover:text-gray-300">
-              <FaFacebook size={24} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaInstagram size={24} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaTwitter size={24} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaTiktok size={24} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaYoutube size={24} />
-            </a>
-          </div>
+        {/* Social Icons */}
+        <div className="flex space-x-4">
+          <h6 className="font-bold text-xl hidden md:block">SOCIAL LINKS</h6>
+          <a href="#" className="hover:text-gray-300">
+            <FaFacebook size={24} />
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            <FaInstagram size={24} />
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            <FaTwitter size={24} />
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            <FaTiktok size={24} />
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            <FaYoutube size={24} />
+          </a>
         </div>
       </div>
       {/* Divider */}
-      <hr className=" w-full h-[0.5px] border-gray-300" />
+      <hr className="w-full h-[0.5px] border-gray-300" />
 
       {/* Copyright */}
       <p className="text-center font-bold text-base mt-2">
